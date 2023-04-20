@@ -1,0 +1,26 @@
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 120px;
+  background-color: #82BD4B;
+}
+
+.contactanos {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #2A2A2A;
+  margin: 0;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.redes Icon{
+  
+} 

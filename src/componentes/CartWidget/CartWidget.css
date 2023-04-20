@@ -1,0 +1,29 @@
+.cajaCarrito{
+   background-color: aqua;
+   position: absolute;
+   top: 0;
+   right: 30px;
+}
+
+.botonCarrito  {      
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #82BD4B;
+   height: 62px;
+   width: 97px;
+   border: none;
+   transition: transform 1s ease;
+}
+
+  .unidadesEnCarrito{   
+      font-size: 1rem;            
+      padding: 5px;           
+  }
+
+.CarritoCero{
+   display:none;
+}
+
+/*------------------------------------------------------------------MOVIL---------------------------------------------------------*/
+

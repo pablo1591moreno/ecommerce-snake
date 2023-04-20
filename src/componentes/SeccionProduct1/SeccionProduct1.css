@@ -1,0 +1,18 @@
+.seccionUnoProduct {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  left: 30px;
+}
+
+.seccionUnoProduct img:first-child {
+  height: 47px;
+  position: absolute;
+  z-index: 1;
+}
+
+.seccionUnoProduct img:nth-child(2) {
+  height: 57px;
+}

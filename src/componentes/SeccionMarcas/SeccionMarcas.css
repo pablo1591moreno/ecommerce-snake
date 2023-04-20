@@ -1,0 +1,19 @@
+.seccionMarcas{
+  height: 63px;
+  display: flex;
+  justify-content: center;
+}
+
+.marcas{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #82BD4B;
+  width: 680px;
+  height: 63px;
+}
+
+.iconosMarca{
+  display: flex;
+  gap: 50px;
+}

@@ -1,0 +1,12 @@
+.seccionUno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 70px;
+  }
+  
+  .seccionUno img:first-child {
+  position: absolute;
+  z-index: 1;
+  }
