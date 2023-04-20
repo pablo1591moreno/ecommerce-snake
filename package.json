@@ -2,7 +2,7 @@
   "name": "ecommerce-snake",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http//pablo1591moreno.github.io/ecommerce-snake/build",
+  "homepage": "http//pablo1591moreno.github.io/ecommerce-snake",
   "dependencies": {
     "@iconify-icons/carbon": "^1.2.16",
     "@iconify/react": "^4.1.0",
