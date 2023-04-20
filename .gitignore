@@ -9,7 +9,8 @@
 /coverage
 
 # production
-#/build
+/build
+/yarn.lock
 
 # misc
 .DS_Store
