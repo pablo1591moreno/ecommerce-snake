@@ -56,7 +56,45 @@
     left: 42%;
 }
 
-.unidadesEnCarrito{
+.unidadesEnCarrito {
     color: #2A2A2A;
     font-size: 1.6rem;
+}
+
+
+/*------------------------------------------------------------------MOVIL---------------------------------------------------------*/
+
+@media (max-width: 415px) {
+ 
+    .contenedorDeProductos {
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        justify-content: center;
+        margin-bottom: 50px;
+      }
+
+    .productosIndividuales img {
+        height: 100px;
+        margin: 5px 0 15px;
+    }
+
+    .productosIndividuales {
+        width: 153px;
+        padding: 5px;
+        height: 180px;
+    }
+
+    .itemNombre {
+        font-size: 0.9rem;
+    }
+
+    .textoProductosItem .precio {
+        font-size: 1rem;
+    }
+
+    .unidadesEnCarrito {
+        font-size: 1.2rem;
+    }
+
 }

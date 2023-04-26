@@ -5,13 +5,13 @@
 }
 
 .tituloUltIngresos {
-  font-size: 30px;
+  font-size: 1.7rem;
   margin-left: 120px;
   color: #F2F2F2;
   font-family: 'Pirata One', cursive;
 }
 
-.imagUltimosIngresos{
+.imagUltimosIngresos {
   padding: 0 120px;
   height: 420px;
   background-color: #2A2A2A;
@@ -31,15 +31,52 @@
 .imagUltimosIngresos .unidadesImg:nth-of-type(even) {
   background-color: #82BD4B;
 }
+
 .imagUltimosIngresos .unidadesImg:nth-of-type(odd) {
   background-color: #F2F2F2;
 }
 
-.unidadesImg img{
+.unidadesImg img {
   width: 160px;
   transition: transform 1s ease;
 }
 
-.unidadesImg img:hover{
+.unidadesImg img:hover {
   transform: scale(1.2);
+}
+
+
+/*------------------------------------------------------------------MOVIL---------------------------------------------------------*/
+
+@media (max-width: 415px) {
+  .ultimosIngresos {
+    height: 60px;
+  }
+
+  .tituloUltIngresos {
+    margin-left: 20px;
+    font-size: 1.3rem;
+  }
+  
+  .unidadesImg {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .unidadesImg a {
+    width: 40%;
+    object-fit: contain;
+  }
+
+  .slider .slide:nth-of-type(even) .unidadesImg {
+    background-color: #F2F2F2;
+  }
+  
+  .slider .slide:nth-of-type(odd) .unidadesImg {
+    background-color: #82BD4B;
+  }
+
 }

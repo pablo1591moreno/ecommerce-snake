@@ -1,91 +1,135 @@
 .seccionCategoria {
-    height: 939px;
+  height: 939px;
+}
+
+.seccionCategoria h2 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 70px;
+  color: #F2F2F2;
+  font-family: 'Pirata One', cursive;
+}
+
+.container {
+  margin: 0 120px 0 120px;
+  height: 711px;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 2.7fr 0.5fr 0.1fr 1.6fr 0.4fr 1.5fr;
+  grid-template-rows: 0.7fr 1.0fr 0.8fr;
+  gap: 20px 20px;
+  grid-template-areas:
+    "remeras remeras camperas camperas pantalones pantalones"
+    "zapatillas zapatillas camperas camperas pantalones pantalones"
+    "gorras buzos buzos buzos buzos ojotas";
+}
+
+.remeras {
+  grid-area: remeras;
+}
+
+.remeras img {
+  object-fit: cover;
+  max-height: 196px;
+  width: 100%;
+  transition: transform 1s ease;
+}
+
+.zapatillas {
+  grid-area: zapatillas;
+}
+
+.zapatillas img {
+  object-fit: cover;
+  max-height: 243px;
+  width: 100%;
+  transition: transform 1s ease;
+}
+
+.camperas {
+  grid-area: camperas;
+}
+
+.pantalones {
+  grid-area: pantalones;
+}
+
+.pantalones img,
+.camperas img {
+  object-fit: cover;
+  height: 461px;
+  max-width: 100%;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+.gorras {
+  grid-area: gorras;
+}
+
+.buzos {
+  grid-area: buzos;
+}
+
+.ojotas {
+  grid-area: ojotas;
+}
+
+.gorras img,
+.buzos img,
+.ojotas img {
+  object-fit: cover;
+  height: 227px;
+  width: 100%;
+  background-color: aqua;
+  cursor: pointer;
+  transition: transform 1s ease;
+}
+
+.container img:hover {
+  transform: scale(1.1);
+}
+
+
+/*------------------------------------------------------------------MOVIL---------------------------------------------------------*/
+
+@media (max-width: 415px) {
+  .seccionCategoria {
+    height: auto;
   }
-  
+
   .seccionCategoria h2 {
-    text-align: center;
-    margin: 40px 0;
-    font-size: 70px;
-    color: #F2F2F2;
-    font-family: 'Pirata One', cursive;
+    margin: 1rem 0;
+    font-size: 1.6rem;
   }
-  
+
   .container {
-    margin: 0 120px 0 120px;
-    height: 711px;
+    margin: 0 25px;
+    height: 240px;
     display: grid;
-    grid-auto-columns: 1fr;
-    grid-template-columns: 2.7fr 0.5fr 0.1fr 1.6fr 0.4fr 1.5fr;
-    grid-template-rows: 0.7fr 1.0fr 0.8fr;
-    gap: 20px 20px;
-    grid-template-areas:
-      "remeras remeras camperas camperas pantalones pantalones"
-      "zapatillas zapatillas camperas camperas pantalones pantalones"
-      "gorras buzos buzos buzos buzos ojotas";
+    grid-template-columns: 1.3fr 0.1fr 0.1fr 2.3fr 0.4fr 1.5fr;
+    grid-template-rows: 0.2fr 0.2fr 0.3fr;
+    gap: 3px 3px;
   }
-  
-  .remeras {
-    grid-area: remeras;
-  }
-  
+
   .remeras img {
-    object-fit: cover;
-    max-height: 196px;
-    width: 100%;
-    transition: transform 1s ease;
+    height: 100%;
   }
-  
-  .zapatillas {
-    grid-area: zapatillas;
-  }
-  
+
   .zapatillas img {
-    object-fit: cover;
-    max-height: 243px;
-    width: 100%;
-    transition: transform 1s ease;
+    height: 100%;
+
   }
-  
-  .camperas {
-    grid-area: camperas;
-  }
-  
-  .pantalones {
-    grid-area: pantalones;
-  }
-  
+
   .pantalones img,
   .camperas img {
-    object-fit: cover;
-    height: 461px;
-    max-width: 100%;
-    cursor: pointer;
-    transition: transform 1s ease;
+    height: 100%;
+
   }
-  
-  .gorras {
-    grid-area: gorras;
-  }
-  
-  .buzos {
-    grid-area: buzos;
-  }
-  
-  .ojotas {
-    grid-area: ojotas;
-  }
-  
+
   .gorras img,
   .buzos img,
   .ojotas img {
-    object-fit: cover;
-    height: 227px;
-    width: 100%;
-    background-color: aqua;
-    cursor: pointer;
-    transition: transform 1s ease;
+    height: 50%;
   }
-  
-.container img:hover{
-    transform: scale(1.1);
 }

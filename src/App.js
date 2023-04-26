@@ -16,12 +16,12 @@ function App() {
             <NavLink to='/'><li>Inicio</li></NavLink>
             <NavLink to='/pageProduct'><li>Ropa</li></NavLink>
           </ul>
-          <CartWidget/>
+          <CartWidget />
         </nav>
         <Routes>
-          <Route path='/' element={<Home/>} />
-          <Route path='/pageProduct/*' element={<Product/>} />
-          <Route path='/Cart' element={<Cart/>} />
+          <Route path='/' element={<Home />} />
+          <Route path='/pageProduct/*' element={<Product />} />
+          <Route path='/Cart' element={<Cart />} />
         </Routes>
       </CartProvider>
     </BrowserRouter>

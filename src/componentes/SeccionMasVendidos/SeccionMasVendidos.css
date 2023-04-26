@@ -28,11 +28,11 @@
   align-items: center;
 }
 
-.unidadesMasImg:nth-of-type(even) {
+.imagMasVendidos .unidadesMasImg:nth-of-type(even) {
   background-color: #F2F2F2;
 }
 
-.unidadesMasImg:nth-of-type(odd) {
+.imagMasVendidos .unidadesMasImg:nth-of-type(odd) {
   background-color: #82BD4B;
 }
 
@@ -43,4 +43,40 @@
 
 .unidadesMasImg img:hover {
   transform: scale(1.2);
+}
+
+
+/*------------------------------------------------------------------MOVIL---------------------------------------------------------*/
+
+@media (max-width: 415px) {
+  .masVendidos {
+    height: 60px;
+  }
+
+  .tituloMasVendidos {
+    margin-left: 20px;
+    font-size: 1.3rem;
+  }
+  
+  .unidadesMasImg {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .unidadesMasImg a {
+    width: 40%;
+    object-fit: contain;
+  }
+ 
+  .slider .slide:nth-of-type(even) .unidadesMasImg {
+    background-color: #82BD4B;
+  }
+  
+  .slider .slide:nth-of-type(odd) .unidadesMasImg {
+    background-color: #F2F2F2;
+  }
+
 }

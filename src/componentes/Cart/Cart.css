@@ -8,7 +8,7 @@
   width: 81%;
   display: flex;
   justify-content: center;
-}  
+}
 
 .contenedorCompras {
   width: 45%;
@@ -40,7 +40,7 @@
   align-items: center;
 }
 
-.imgCompra img{
+.imgCompra img {
   width: 80%;
   height: 80%;
   object-fit: contain;
@@ -80,14 +80,14 @@
   background-color: #F2F2F2;
 }
 
-.confirmacion{
+.confirmacion {
   font-size: 1.43rem;
   color: 2A2A2A;
   margin: 0 0 30px;
   padding: 0;
 }
 
-.formulario{
+.formulario {
   width: 80%;
 }
 
@@ -123,24 +123,93 @@
   transform: scale(1.1);
 }
 
-.carritoVacio{
+.carritoVacio {
   font-family: 'Outfit', sans-serif;
   text-align: center;
   font-size: 2rem;
   color: #F2F2F2;
 }
 
-.verProductos{
+.verProductos {
   text-align: center;
   font-size: 1.2rem;
   margin: 0;
 }
 
+.compraExitosa {
+  margin: 12% auto;
+  padding: 5%;
+  background-color: #82BD4B;
+  color: #F2F2F2;
+  font-size: 2rem;
+}
 
-.compraExitosa{
-margin: 12% auto;
-padding: 5%;
-background-color: #82BD4B;
-color: #F2F2F2;
-font-size: 2rem;
+.totalFinalMovil {
+  display: none;
+}
+
+@media (max-width: 415px) {
+  .compraMasFormulario {
+    margin: 74px 0 40px;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+  }
+
+  .contenedorCompras {
+    width: 100%;
+  }
+
+  .productoComprado {
+    margin: 20px;
+    height: 65px;
+  }
+
+  .carNombre,
+  .precioTotal,
+  .cantidadPrecio {
+    font-size: 16px;
+  }
+
+  .contenedorFromulario {
+    width: 100%;
+    background-color: #F2F2F2;
+    margin-bottom: 10px;
+  }
+
+  .formulario {
+    width: 90%;
+  }
+
+  .confirmacion {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .totalFinalMovil {
+    display: block;
+    font-size: 24px;
+    color: #F2F2F2;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+  }
+
+  .totalFinal {
+    display: none;
+  }
+
+  .botonFormulario {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carritoVacioVerProductos {
+    margin-top: 50%;
+  }
+
+  .carritoVacio {
+    margin: 0;
+  }
+
 }

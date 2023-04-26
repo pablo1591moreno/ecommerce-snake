@@ -17,3 +17,22 @@
   display: flex;
   gap: 50px;
 }
+
+/*------------------------------------------------------------------MOVIL---------------------------------------------------------*/
+
+@media (max-width: 415px) {
+
+  .seccionMarcas{
+    height: auto;
+  }
+
+  .marcas{
+    height: 40px;
+    width: 90%;
+  }
+
+  .iconosMarca{
+    gap: 10%;
+  }
+
+}

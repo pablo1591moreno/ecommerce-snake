@@ -16,3 +16,19 @@
 .seccionUnoProduct img:nth-child(2) {
   height: 57px;
 }
+
+
+@media (max-width: 415px) {
+  .seccionUnoProduct {
+    top: 18px;
+    left: 20px;
+  }
+
+  .seccionUnoProduct img:first-child {
+    height: 32px;
+  }
+
+  .seccionUnoProduct img:nth-child(2) {
+    height: 37px;
+  }
+}

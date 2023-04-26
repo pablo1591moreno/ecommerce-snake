@@ -1,46 +1,74 @@
-.cantidad{
+.cantidad {
   font-size: 20px;
   font-weight: 700;
 }
 
-.sumaResta { 
-  display: flex; 
+.sumaResta {
+  display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
-  }
+}
 
-  .agregarCarrito{
-    padding: 8px;
-    font-size: 1.45rem;
-    border: none;
-    color: #2A2A2A;     
-    background-color: #82BD4B;
-    font-weight: 700;
-    cursor: pointer;
-    transition: transform 1s ease;
+.agregarCarrito {
+  padding: 8px;
+  font-size: 1.45rem;
+  border: none;
+  color: #2A2A2A;
+  background-color: #82BD4B;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 1s ease;
 }
 
 .agregarCarrito:hover {
   transform: scale(1.1);
 }
 
-   .sumaResta p{
-    color: #FFFFFF; 
-    font-size: 25px;    
-   }
-
-  .botonResta, .botonSuma{   
-    background-color:transparent;
-    color: #FFFFFF;     
-    width: 15px;
-    font-weight: bold;
-    font-size: 1.4rem;  
-    border: none;
-    cursor: pointer;
+.sumaResta p {
+  color: #FFFFFF;
+  font-size: 25px;
 }
 
-.sinStock{
+.botonResta,
+.botonSuma {
+  background-color: transparent;
+  color: #FFFFFF;
+  width: 15px;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border: none;
+  cursor: pointer;
+}
+
+.sinStock {
   font-size: 1.5rem;
   font-weight: 700;
+}
+
+@media (max-width: 415px) {
+
+  .agregarCarrito {
+    padding: 5px;
+    font-size: 1.1rem;
+  }
+
+  .boton{
+    display: flex;
+    justify-content: center;
+  }
+
+  .sumaResta p {
+    font-size: 20px;
+  }
+
+  .botonResta,
+  .botonSuma {
+    font-size: 1.1rem;
+  }
+
+  .sumaResta {
+    gap: 20px;
+  }
+
 }

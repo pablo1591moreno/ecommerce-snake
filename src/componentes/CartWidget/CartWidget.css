@@ -1,11 +1,11 @@
-.cajaCarrito{
+.cajaCarrito {
    background-color: aqua;
    position: absolute;
    top: 0;
    right: 30px;
 }
 
-.botonCarrito  {      
+.botonCarrito {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -16,14 +16,37 @@
    transition: transform 1s ease;
 }
 
-  .unidadesEnCarrito{   
-      font-size: 1rem;            
-      padding: 5px;           
-  }
+.botonCarrito svg {
+   font-size: 40px;
+}
 
-.CarritoCero{
-   display:none;
+.unidadesEnCarrito {
+   font-size: 1rem;
+   padding: 5px;
+}
+
+.CarritoCero {
+   display: none;
 }
 
 /*------------------------------------------------------------------MOVIL---------------------------------------------------------*/
 
+@media (max-width: 415px) {
+   .cajaCarrito {
+      right: 0px;
+   }
+   
+   .botonCarrito svg {
+      font-size: 30px;
+   }
+   
+   .botonCarrito {
+      width: 60px;
+      height: 45px;
+   }
+
+   .unidadesEnCarrito {
+      font-size: .1rem;
+   }
+
+}

@@ -55,60 +55,61 @@ const Cart = () => {
 
   return (
     <>
-    <SeccionProduct1/>
-    <div className='contenedorCompForm'>
-      {idOrden ? (
-        <h1 className='compraExitosa'>Compra Exitosa ID : {idOrden}</h1>
-      ) : (
-        <>
-          {productCartList.length > 0 ? (
-            <div className='compraMasFormulario'>
-              <div className='contenedorCompras'>
-                {productCartList.map(item => (
-                  <div className='productoComprado' key={item.id}>
-                    <div className='imgCompra'>
-                      <img src={item.imagen} alt={item.nombre} />
+      <SeccionProduct1 />
+      <div className='contenedorCompForm'>
+        {idOrden ? (
+          <h1 className='compraExitosa'>Compra Exitosa ID : {idOrden}</h1>
+        ) : (
+          <>
+            {productCartList.length > 0 ? (
+              <div className='compraMasFormulario'>
+                <div className='contenedorCompras'>
+                  {productCartList.map(item => (
+                    <div className='productoComprado' key={item.id}>
+                      <div className='imgCompra'>
+                        <img src={item.imagen} alt={item.nombre} />
+                      </div>
+                      <div className='infoProductoComprado'>
+                        <h2 className='carNombre'>{item.nombre}</h2>
+                        <h3 className='cantidadPrecio'>Cantidad - {item.cantidad} x ${item.precio}</h3>
+                        <h3 className='precioTotal'>${item.cantidad * item.precio}</h3>
+                      </div>
+                      <button className='eliminarProducto' onClick={() => removerItem(item.id)}><Icon icon="material-symbols:delete-forever-outline" width={"40px"} alt="Carrito" style={{ color: "#2A2A2A" }} /></button>
                     </div>
-                    <div className='infoProductoComprado'>
-                      <h2 className='carNombre'>{item.nombre}</h2>
-                      <h3 className='cantidadPrecio'>Cantidad - {item.cantidad} x ${item.precio}</h3>
-                      <h3 className='precioTotal'>${item.cantidad * item.precio}</h3>
+                  ))}
+                </div>
+                <h3 className='totalFinalMovil'>Total ${getTotal()}</h3>
+                <div className='contenedorFromulario'>
+                  <h2 className='confirmacion'>Ingresa tus datos y confirma tu compra</h2>
+                  <form className='formulario' onSubmit={enviarFormulario}>
+                    <div className='formGroup'>
+                      <label htmlFor='nombre'>Nombre:</label>
+                      <input type='text' id='nombre' name='nombre' required />
                     </div>
-                    <button className='eliminarProducto' onClick={() => removerItem(item.id)}><Icon icon="material-symbols:delete-forever-outline" width={"40px"} alt="Carrito" style={{ color: "#2A2A2A" }} /></button>
-                  </div>
-                ))}
+                    <div className='formGroup'>
+                      <label htmlFor='telefono'>Teléfono:</label>
+                      <input type='tel' id='telefono' name='telefono' required />
+                    </div>
+                    <div className='formGroup'>
+                      <label htmlFor='email'>Email:</label>
+                      <input type='email' id='email' name='email' required />
+                    </div>
+                    <div className='botonFormulario'>
+                      <button className='enviar' type='submit'>Confirmar</button>
+                    </div>
+                  </form>
+                </div>
+                <h3 className='totalFinal'>Total ${getTotal()}</h3>
               </div>
-              <div className='contenedorFromulario'>
-                <h2 className='confirmacion'>Ingresa tus datos y confirma tu compra</h2>
-                <form className='formulario' onSubmit={enviarFormulario}>
-                  <div className='formGroup'>
-                    <label htmlFor='nombre'>Nombre:</label>
-                    <input type='text' id='nombre' name='nombre' required />
-                  </div>
-                  <div className='formGroup'>
-                    <label htmlFor='telefono'>Teléfono:</label>
-                    <input type='tel' id='telefono' name='telefono' required />
-                  </div>
-                  <div className='formGroup'>
-                    <label htmlFor='email'>Email:</label>
-                    <input type='email' id='email' name='email' required />
-                  </div>
-                  <div className='botonFormulario'>
-                    <button className='enviar' type='submit'>Confirmar</button>
-                  </div>
-                </form>
+            ) : (
+              <div className='carritoVacioVerProductos'>
+                <h2 className='carritoVacio'>CARRITO VACÍO!!!</h2>
+                <NavLink to='/pageProduct'><h3 className='verProductos'>Ver productos</h3></NavLink>
               </div>
-              <h3 className='totalFinal'>Total ${getTotal()}</h3>
-            </div>
-          ) : (
-            <div className='carritoVacioVerProductos'>
-              <h2 className='carritoVacio'>CARRITO VACÍO!!!</h2>
-              <NavLink to='/pageProduct'><h3 className='verProductos'>Ver productos</h3></NavLink>
-            </div>
-          )}
-        </>
-      )}
-    </div>
+            )}
+          </>
+        )}
+      </div>
     </>
 
   )

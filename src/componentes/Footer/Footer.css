@@ -21,6 +21,27 @@
   gap: 20px;
 }
 
-.redes Icon{
-  
-} 
+.redes svg {
+  font-size: 25px;
+}
+
+@media (max-width: 415px) {
+  .footer-container {
+    height: 80px;
+    margin-bottom: 45px;
+  }
+
+  .contactanos {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+
+  .redes {
+    gap: 15px;
+  }
+
+  .redes svg {
+    width: 20px;
+  }
+
+}

@@ -15,7 +15,7 @@ const CartWidget = () => {
         <Link to='/Cart'>
             <div className='cajaCarrito' >
                 <button className='botonCarrito' type="button">
-                <Icon icon="material-symbols:add-shopping-cart" width={"40px"} alt="Carrito" style={{ color: "#2A2A2A" }} />
+                <Icon icon="material-symbols:add-shopping-cart" alt="Carrito" style={{ color: "#2A2A2A" }} />
                     <span className={productosEnCarrito > 0 ? "unidadesEnCarrito" : "CarritoCero"}>{productosEnCarrito}</span>
                 </button>
             </div>

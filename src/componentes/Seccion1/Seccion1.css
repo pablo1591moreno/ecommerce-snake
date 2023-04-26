@@ -4,9 +4,27 @@
   align-items: center;
   position: relative;
   margin-bottom: 70px;
-  }
-  
-  .seccionUno img:first-child {
+}
+
+.seccionUno img:first-child {
   position: absolute;
   z-index: 1;
+}
+
+
+/*------------------------------------------------------------------MOVIL---------------------------------------------------------*/
+@media (max-width: 415px) {
+
+  .seccionUno {
+    margin: 10px 0 20px 0;
   }
+
+  .seccionUno img:first-child {
+    width: 50%;
+  }
+
+  .seccionUno img:nth-child(2) {
+    width: 85%;
+  }
+
+}
