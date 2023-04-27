@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ecommerce-snake/static/css/main.4abe574d.css",
+    "main.js": "/ecommerce-snake/static/js/main.f4f035ae.js",
+    "static/js/787.013e1f5e.chunk.js": "/ecommerce-snake/static/js/787.013e1f5e.chunk.js",
+    "static/media/gorras.png": "/ecommerce-snake/static/media/gorras.8057b19f41b0c0a87350.png",
+    "static/media/zapatillas.png": "/ecommerce-snake/static/media/zapatillas.0be3169466fa8990d545.png",
+    "static/media/pantalones.png": "/ecommerce-snake/static/media/pantalones.c197be9f13820e2d7511.png",
+    "static/media/ojotas.png": "/ecommerce-snake/static/media/ojotas.a9cc02406497eb90bc65.png",
+    "static/media/camperas.png": "/ecommerce-snake/static/media/camperas.6ce614d79e32459aca6c.png",
+    "static/media/buzos.png": "/ecommerce-snake/static/media/buzos.a4e11f749d684ccdb1ec.png",
+    "static/media/remeras.png": "/ecommerce-snake/static/media/remeras.c9fab19b4bf1cd5385ba.png",
+    "static/media/snakeGraff.png": "/ecommerce-snake/static/media/snakeGraff.a74529afb7a3da3d0770.png",
+    "static/media/snake.png": "/ecommerce-snake/static/media/snake.93d1f21d40e57b922626.png",
+    "index.html": "/ecommerce-snake/index.html",
+    "main.4abe574d.css.map": "/ecommerce-snake/static/css/main.4abe574d.css.map",
+    "main.f4f035ae.js.map": "/ecommerce-snake/static/js/main.f4f035ae.js.map",
+    "787.013e1f5e.chunk.js.map": "/ecommerce-snake/static/js/787.013e1f5e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4abe574d.css",
+    "static/js/main.f4f035ae.js"
+  ]
+}
