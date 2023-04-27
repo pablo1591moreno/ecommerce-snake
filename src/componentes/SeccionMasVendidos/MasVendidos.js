@@ -14,7 +14,7 @@ function SeccionMasVendidos({ masVendidos }) {
   return (
     <>
       <div className='masVendidos'>
-        <h1 className='tituloMasVendidos'>Más vendidos</h1>
+        <h2 className='tituloMasVendidos'>Más vendidos</h2>
       </div>
       <div className={`carouselWrapper ${isMobile ? 'mobile' : ''}`}>
         {isMobile ? (
