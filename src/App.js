@@ -19,7 +19,7 @@ function App() {
           <CartWidget />
         </nav>
         <Routes>
-          <Route path='/' element={<Home />} />
+          <Route path='/ecommerce-snake' element={<Home />} />
           <Route path='/pageProduct/*' element={<Product />} />
           <Route path='/Cart' element={<Cart />} />
         </Routes>
