@@ -13,7 +13,7 @@ function App() {
       <CartProvider>
         <nav className="navbar">
           <ul className='menu'>
-            <NavLink to='/'><li>Inicio</li></NavLink>
+            <NavLink to='/ecommerce-snake'><li>Inicio</li></NavLink>
             <NavLink to='/pageProduct'><li>Ropa</li></NavLink>
           </ul>
           <CartWidget />
