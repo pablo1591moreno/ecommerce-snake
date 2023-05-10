@@ -1,11 +1,11 @@
 # Ecommerce Snake
 
-Ecommerce armado con react js y consumo de base de dato firebase
+Ecommece responsive diseñado en Figma y creado con React js, la carga de productos se hace desde la base de datos firebase tambien crea registros de compras solicitadas en la misma base de datos
 
 ## Herramientas
 
-React JS
-Firebase (base de tatos)
+> React JS
+> Firebase (base de tatos)
 
 ## Imagenes del Proyecto
 
