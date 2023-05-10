@@ -4,8 +4,8 @@ Ecommece responsive diseñado en Figma y creado con React js, la carga de produc
 
 ## Herramientas
 
-> React JS
-> Firebase (base de tatos)
+ React JS
+ Firebase (base de tatos)
 
 ## Imagenes del Proyecto
 
